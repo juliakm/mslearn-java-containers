@@ -46,6 +46,7 @@ stages:
         containerRegistry: 'Container Registry Connection'
         tags: |
           $(tag)
+          latest
 
     - task: AzureMysqlDeployment@1
       displayName: Run MySQL initialization script
